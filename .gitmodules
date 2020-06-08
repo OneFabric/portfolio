@@ -1,0 +1,3 @@
+[submodule "backEnd/codeFeed"]
+	path = backEnd/codeFeed
+	url = https://github.com/OneFabric/codeFeed.git
