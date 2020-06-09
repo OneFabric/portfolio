@@ -6,8 +6,6 @@ var endpoint = API.apiEndpoint
 
 const time = "0 6 * * *"
 
-process()
-
 function process() {
     var apiResult = []
 
