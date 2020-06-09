@@ -3,4 +3,4 @@
 	url = https://github.com/OneFabric/codeFeed.git
 [submodule "frontEnd/startbootstrap-freelancer"]
 	path = frontEnd/startbootstrap-freelancer
-	url = https://github.com/BlackrockDigital/startbootstrap-freelancer.git
+	url = https://github.com/OneFabric/startbootstrap-freelancer.git
