@@ -4,36 +4,25 @@ const fs = require('fs')
 
 var endpoint = API.apiEndpoint
 
-const time = "0 7 * * *"
+const time = "0 6 * * *"
 
 process()
 
 function process() {
-    var apiResult, processResult = []
+    var apiResult = []
 
     cron.schedule(
                     time,
                     function() {
-                        wrapper()
-                        fs.writeFile('feed.txt',processResult, function(err,result) {
+                        endPointWrapper()
+                        fs.writeFile('../../frontEnd/public/feed.txt',apiResult, function(err,result) {
                             if(err) console.log('error!:',err)
                         })
                     }
                  )
     
-    function wrapper() {
-        endPointWrapper()
-        process()
-    }
-    
     function endPointWrapper() {
         apiResult = endpoint()
-    }
-    
-    function process() {
-        for(index in apiResult) {
-            processResult[index] = "<p>" + apiResult[index] + "</p>"
-        }
     }
 }
 
