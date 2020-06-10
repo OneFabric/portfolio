@@ -12,7 +12,7 @@ app.get('/', function(req, res) {
 
 app.post('/assets/mail/contact_me.php', function(req, res) {
     console.log("getting contact_me.php request!")
-    console.log(res)
+    console.log(req.body)
 })
 
 lib.process()
