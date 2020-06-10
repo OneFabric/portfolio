@@ -13,7 +13,6 @@ function process() {
                     time,
                     function() {
                         endPointWrapper() 
-                        console.log("About to write")
                         fs.writeFile('./frontEnd/public/feed.txt',apiResult, function(err,result) {
                             if(err) console.log('error!:',err)
                         })
@@ -21,7 +20,6 @@ function process() {
                  )
     
     function endPointWrapper() {
-        console.log("Entering endPointWrapper!")
         apiResult = endpoint()
     }
 }
