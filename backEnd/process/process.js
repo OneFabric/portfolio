@@ -5,14 +5,16 @@ const fs = require('fs')
 var endpoint = API.apiEndpoint
 
 const time = "59 23 * * *" // midnight, every day
+const timeTest = "* * * * *"
 
 function process() {
     var apiResult = []
 
     cron.schedule(
-                    time,
+                    timeTest,
                     function() {
                         endPointWrapper()
+                        console.log("About to write")
                         fs.writeFile('../../frontEnd/public/feed.txt',apiResult, function(err,result) {
                             if(err) console.log('error!:',err)
                         })
@@ -20,6 +22,7 @@ function process() {
                  )
     
     function endPointWrapper() {
+        console.log("Entering endPointWrapper!")
         apiResult = endpoint()
     }
 }

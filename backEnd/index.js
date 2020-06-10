@@ -10,6 +10,7 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/../frontEnd/public/dist/index.html'))
 });
 
+console.log("about to execute process!")
 lib.process()
 
 app.listen(process.env.PORT || 8080);
