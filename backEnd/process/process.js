@@ -5,13 +5,12 @@ const fs = require('fs')
 var endpoint = API.apiEndpoint
 
 const time = "59 23 * * *" // midnight, every day
-const timeTest = "* * * * *"
 
 function process() {
     var apiResult = []
 
     cron.schedule(
-                    timeTest,
+                    time,
                     function() {
                         endPointWrapper() 
                         console.log("About to write")
