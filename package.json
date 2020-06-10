@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio to show case my skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OneFabric/portfolio.git"
+  },
+  "keywords": [
+    "Node.js",
+    "javaScript"
+  ],
+  "author": "OneFabric",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/OneFabric/portfolio/issues"
+  },
+  "homepage": "https://github.com/OneFabric/portfolio#readme"
+}
