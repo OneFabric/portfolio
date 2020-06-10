@@ -30,6 +30,7 @@ app.post('/assets/mail/contact_me.php', function(req, res) {
             console.log(err && err.stack)
         }
     )
+    res.sendStatus(200)
 
 })
 
