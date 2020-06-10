@@ -1,7 +1,12 @@
 var express = require('express');
-var app = express();
 var path = require('path');
+const bodyParser = require('body-parser')
 var lib = require('./process/process')
+
+var app = express();
+
+app.use(bodyParser.json())
+app.use(bodyParser.text)
 
 app.use(express.static(path.join(__dirname, '../frontEnd/public')))
 app.use(express.static(path.join(__dirname, '../frontEnd/public/dist')))
