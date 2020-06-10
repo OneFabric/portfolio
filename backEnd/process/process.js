@@ -13,9 +13,9 @@ function process() {
     cron.schedule(
                     timeTest,
                     function() {
-                        endPointWrapper()
+                        endPointWrapper() 
                         console.log("About to write")
-                        fs.writeFile('../../frontEnd/public/feed.txt',apiResult, function(err,result) {
+                        fs.writeFile('../frontEnd/public/feed.txt',apiResult, function(err,result) {
                             if(err) console.log('error!:',err)
                         })
                     }
