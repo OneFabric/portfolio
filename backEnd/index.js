@@ -5,15 +5,15 @@ var lib = require('./process/process')
 
 var app = express();
 
-app.use(bodyParser.json())
-app.use(bodyParser.text)
-
 app.use(express.static(path.join(__dirname, '../frontEnd/public')))
 app.use(express.static(path.join(__dirname, '../frontEnd/public/dist')))
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/../frontEnd/public/dist/index.html'))
 });
+
+app.use(bodyParser.json())
+app.use(bodyParser.text)
 
 app.post('/assets/mail/contact_me.php', function(req, res) {
     console.log("getting contact_me.php request!")
