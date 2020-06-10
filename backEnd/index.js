@@ -22,8 +22,8 @@ app.post('/assets/mail/contact_me.php', function(req, res) {
     mailer(
         {
             from: req.body.email,
-            to: '1neFabric@gmail.com',
-            subject: '[Portfolio] Message from ' + req.body.name + 'with phone#' +req.body.phone,
+            to: 'o.fabric@yahoo.com',
+            subject: '[Portfolio] Message from ' + req.body.name + ' with phone#' +req.body.phone,
             html: req.body.message
         },
         function(err, reply) {
