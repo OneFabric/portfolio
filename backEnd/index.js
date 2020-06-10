@@ -13,7 +13,7 @@ app.get('/', function(req, res) {
 });
 
 app.use(bodyParser.json())
-app.use(bodyParser.text)
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/assets/mail/contact_me.php', function(req, res) {
     console.log("getting contact_me.php request!")
