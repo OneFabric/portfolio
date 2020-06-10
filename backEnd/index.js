@@ -1,7 +1,7 @@
 var express = require('express');
 var path = require('path');
 const bodyParser = require('body-parser')
-var mailer = require('sendmail')
+var mailer = require('sendmail')()
 var lib = require('./process/process')
 
 var app = express();
