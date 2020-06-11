@@ -4,7 +4,7 @@ const fs = require('fs')
 
 var endpoint = API.apiEndpoint
 
-const time = "* 11 * * *" // 11 am, every day
+const time = "0 11 * * *" // 11 am, every day
 
 function process() {
     var apiResult = []
