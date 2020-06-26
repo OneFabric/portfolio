@@ -5,7 +5,7 @@
 
 While actively searching in the job market, I felt the need to market my skills & strengths more effectively than what I could through traditional channels.
 
-I managed to fulfill that need through designing, developing and troubleshooting a website that is currently being hosted on heroku. 
+I managed to fulfill that need through designing, developing and troubleshooting a [website](https://sumanjampala.net/) that is currently being hosted on heroku. 
 
 
 ## Design & Development
