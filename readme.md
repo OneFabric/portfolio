@@ -14,7 +14,7 @@ I wanted to learn more about front-end development, as most of my experience has
 
 Keeping my desire to learn in mind, I created this repository with two submodules - one, with a repository cloned from [Start Bootstrap](https://startbootstrap.com/), and two, a repository cloned from [codeFeed](https://github.com/OneFabric/codeFeed) (a node.js app I started and contribute to).
 
-I modified the the bootstrap template to suit my needs. In addition to adding personalizaed content, I swapped out the PHP-based contact form and used a library that would serve as a mail server. I added my Linked In profile in the footer. 
+I modified the bootstrap template to suit my needs. In addition to adding personalizaed content, I swapped out the PHP-based contact form and used a library that would serve as a mail server. I added my Linked In profile in the footer. 
 
 As for codeFeed, the data from the API endpoint was insufficiently formatted for the purposes of this repository. I wrote a Node.js script that would process the information I got from codeFeed, and format it such that it could be pretty printed in HTML.
 
